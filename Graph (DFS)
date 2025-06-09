@@ -11,7 +11,7 @@ class Graph:
         queue = [start]
         visited = []
         while queue:
-            cur = queue.pop(0)
+            cur = queue.pop()
             if cur not in visited:
                 visited.append(cur)
                 queue.extend(self.graph[cur])
