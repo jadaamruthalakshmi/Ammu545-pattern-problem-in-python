@@ -7,7 +7,7 @@ class Graph:
         else:
             self.graph[v].append(e)
 
-    def bfs(self,start):
+    def dfs(self,start):
         queue = [start]
         visited = []
         while queue:
